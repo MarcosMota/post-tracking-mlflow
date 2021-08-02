@@ -46,8 +46,3 @@ if __name__ == "__main__":
         # Salve as métricas
         mse = mean_squared_error(y_test, predictions)
         mlflow.log_metric("mse", mse)
-
-        print(f"MSE: {mse}")
-
-
-
