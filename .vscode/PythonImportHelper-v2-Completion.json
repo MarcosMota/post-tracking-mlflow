@@ -1,0 +1,97 @@
+[
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "mlflow",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mlflow",
+        "description": "mlflow",
+        "detail": "mlflow",
+        "documentation": {}
+    },
+    {
+        "label": "mlflow.sklearn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mlflow.sklearn",
+        "description": "mlflow.sklearn",
+        "detail": "mlflow.sklearn",
+        "documentation": {}
+    },
+    {
+        "label": "RandomForestRegressor",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "load_diabetes",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
+        "isExtraImport": true,
+        "detail": "sklearn.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "train",
+        "description": "train",
+        "peekOfCode": "db = load_diabetes()\nX = db.data\ny = db.target\nX_train, X_test, y_train, y_test = train_test_split(X, y)\nmlflow.set_experiment('diabetes_regressor')\nif __name__ == \"__main__\":\n    parser = argparse.ArgumentParser(description='Diabetes regressor training')\n    parser.add_argument('--n_estimators',type=int, default=100, help='The number of trees in the forest.')\n    parser.add_argument('--max_depth', type=int,default=6, help='The maximum depth of the tree.')\n    parser.add_argument('--max_features', type=int,default=3, help='The number of features.')",
+        "detail": "train",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "train",
+        "description": "train",
+        "peekOfCode": "X = db.data\ny = db.target\nX_train, X_test, y_train, y_test = train_test_split(X, y)\nmlflow.set_experiment('diabetes_regressor')\nif __name__ == \"__main__\":\n    parser = argparse.ArgumentParser(description='Diabetes regressor training')\n    parser.add_argument('--n_estimators',type=int, default=100, help='The number of trees in the forest.')\n    parser.add_argument('--max_depth', type=int,default=6, help='The maximum depth of the tree.')\n    parser.add_argument('--max_features', type=int,default=3, help='The number of features.')\n    args = parser.parse_args()",
+        "detail": "train",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "train",
+        "description": "train",
+        "peekOfCode": "y = db.target\nX_train, X_test, y_train, y_test = train_test_split(X, y)\nmlflow.set_experiment('diabetes_regressor')\nif __name__ == \"__main__\":\n    parser = argparse.ArgumentParser(description='Diabetes regressor training')\n    parser.add_argument('--n_estimators',type=int, default=100, help='The number of trees in the forest.')\n    parser.add_argument('--max_depth', type=int,default=6, help='The maximum depth of the tree.')\n    parser.add_argument('--max_features', type=int,default=3, help='The number of features.')\n    args = parser.parse_args()\n    with mlflow.start_run():",
+        "detail": "train",
+        "documentation": {}
+    }
+]

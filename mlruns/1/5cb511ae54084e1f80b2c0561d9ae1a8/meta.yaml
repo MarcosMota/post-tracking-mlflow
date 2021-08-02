@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/1/5cb511ae54084e1f80b2c0561d9ae1a8/artifacts
+end_time: 1627838615458
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 5cb511ae54084e1f80b2c0561d9ae1a8
+run_uuid: 5cb511ae54084e1f80b2c0561d9ae1a8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1627838614923
+status: 3
+tags: []
+user_id: Mota
